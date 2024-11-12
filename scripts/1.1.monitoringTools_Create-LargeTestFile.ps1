@@ -1,4 +1,3 @@
-# Step 1: Create Large Test File Demo
 # Save as Create-DemoFile.ps1
 
 function Create-LargeFile {
