@@ -4,8 +4,8 @@ Import-Module ActiveDirectory
 # Check replication status
 repadmin /replsummary
 
-# Enable Recycle Bin
-Enable-ADOptionalFeature -FeatureName 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target 'learnedlessons.com'
+# Enable Active Directory Recycle Bin
+Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target 'learnitlessons.com'
 
 # Verify Recycle Bin status
 Get-ADOptionalFeature -Filter 'name -like "recycle*"'
